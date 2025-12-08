@@ -73,4 +73,3 @@ def search_documents(query_embedding, allowed_ids=None, top_k=3):
         size=top_k
     )
     return [hit["_source"] for hit in response["hits"]["hits"]]
-
