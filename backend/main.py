@@ -216,7 +216,7 @@ async def ingest_documents(
             results.append({
                 "filename": file.filename,
                 "status": "Failed",
-                "error": str(e)
+                "error": "An internal error occurred while processing this file."
             })
     
     return {"message": "Files uploaded and processing started", "files": results}
